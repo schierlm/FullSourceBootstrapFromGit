@@ -1,0 +1,32 @@
+name: Build parts that match branch name
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  part01:
+    if: startsWith(github.ref, 'refs/heads/part01')
+    uses: ./.github/workflows/common.yml
+    with:
+      partname: part01
+      release_id: 67799948
+  part02:
+    if: startsWith(github.ref, 'refs/heads/part02')
+    uses: ./.github/workflows/common.yml
+    with:
+      partname: part02
+      release_id: 68046980
+      depends_parts: part01
+  swh:
+    if: startsWith(github.ref, 'refs/heads/main')
+    name: Check that all repositories are archived by softwareheritage.org
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+    - name: Checkout this repository
+      uses: actions/checkout@v2
+
+    - name: Run check-swh script
+      run: ./check-swh.sh

@@ -1,0 +1,109 @@
+name: Common bits for running a bootstrap part
+
+on:
+  workflow_call:
+    inputs:
+      partname:
+        required: true
+        type: string
+      release_id:
+        required: true
+        type: number
+      depends_parts:
+        required: false
+        default: ""
+        type: string
+      timeout:
+        required: false
+        default: 180
+        type: number
+
+jobs:
+  run_common:
+    name: Common bits for running bootstrap part ${{ inputs.partname }}
+    runs-on: ubuntu-latest
+    timeout-minutes: ${{ fromJSON(inputs.timeout) }}
+
+    steps:
+    - name: Checkout this repository
+      uses: actions/checkout@v2
+
+    - name: Download previous part outputs
+      if: inputs.depends_parts != ''
+      run: ./download-previous-outputs.sh "${{ inputs.depends_parts }}"
+
+    - name: Run the bootstrap
+      run: sudo ./${{ inputs.partname }}.sh
+
+    - name: Upload part00-output.tar.xz artifact
+      if: inputs.partname == 'part01'
+      uses: actions/upload-artifact@v2
+      with:
+        name: part00-output.tar.xz
+        path: cache/part00-output.tar.xz
+
+    - name: Upload ${{ inputs.partname }}-input.tar.xz artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: ${{ inputs.partname }}-input.tar.xz
+        path: build/${{ inputs.partname }}-input.tar.xz
+
+    - name: Upload ${{ inputs.partname }}-output.tar.xz artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: ${{ inputs.partname }}-output.tar.xz
+        path: cache/${{ inputs.partname }}-output.tar.xz
+
+    - name: Remove old assets from release to update
+      if: github.ref == format('refs/heads/{0}', inputs.partname) && github.repository == 'schierlm/FullSourceBootstrapFromGit'
+      uses: actions/github-script@v1
+      with:
+        github-token: ${{secrets.GITHUB_TOKEN}}
+        script: |
+         var assets = await github.repos.listAssetsForRelease({
+           owner: "schierlm",
+           repo: "FullSourceBootstrapFromGit",
+           release_id: ${{ inputs.release_id }},
+           per_page: 100
+         });
+         for(var asset of assets.data) {
+           await github.repos.deleteReleaseAsset({
+             owner: "schierlm",
+             repo: "FullSourceBootstrapFromGit",
+             asset_id: asset.id
+           });
+         }
+         return true;
+
+    - name: Upload Release Asset part00-output.tar.xz
+      if: inputs.partname == 'part01' && github.ref == format('refs/heads/{0}', inputs.partname) && github.repository == 'schierlm/FullSourceBootstrapFromGit'
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: https://uploads.github.com/repos/schierlm/FullSourceBootstrapFromGit/releases/${{ inputs.release_id }}/assets{?name,label}
+        asset_path: cache/part00-output.tar.xz
+        asset_name: part00-output.tar.xz
+        asset_content_type: application/x-xz
+
+    - name: Upload Release Asset ${{ inputs.partname }}-input.tar.xz
+      if: github.ref == format('refs/heads/{0}', inputs.partname) && github.repository == 'schierlm/FullSourceBootstrapFromGit'
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: https://uploads.github.com/repos/schierlm/FullSourceBootstrapFromGit/releases/${{ inputs.release_id }}/assets{?name,label}
+        asset_path: build/${{ inputs.partname }}-input.tar.xz
+        asset_name: ${{ inputs.partname }}-input.tar.xz
+        asset_content_type: application/x-xz
+
+    - name: Upload Release Asset ${{ inputs.partname }}-output.tar.xz
+      if: github.ref == format('refs/heads/{0}', inputs.partname) && github.repository == 'schierlm/FullSourceBootstrapFromGit'
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: https://uploads.github.com/repos/schierlm/FullSourceBootstrapFromGit/releases/${{ inputs.release_id }}/assets{?name,label}
+        asset_path: cache/${{ inputs.partname }}-output.tar.xz
+        asset_name: ${{ inputs.partname }}-output.tar.xz
+        asset_content_type: application/x-xz

@@ -1,0 +1,36 @@
+#!/bin/sh
+
+# SPDX-FileCopyrightText: 2022 Andrius Štikonas <andrius@stikonas.eu>
+# SPDX-FileCopyrightText: 2021 Paul Dersey <pdersey@gmail.com>
+# SPDX-FileCopyrightText: 2021-22 fosslinux <fosslinux@aussies.space>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+set -ex
+
+PATH=${PATH}:/opt/part02/tcc/bin:/opt/part02/make/bin:/opt/part02/coreutils/bin
+prefix=/opt/part02/bash
+
+cd /sources/bash-2.05b
+cp /sources/live-bootstrap/sysa/bash-2.05b/mk/main.mk Makefile
+cp /sources/live-bootstrap/sysa/bash-2.05b/mk/builtins.mk builtins/Makefile
+cp /sources/live-bootstrap/sysa/bash-2.05b/mk/common.mk common.mk
+
+# Create various .h files
+touch config.h
+touch include/version.h
+touch include/pipesize.h
+
+# Compile
+make mkbuiltins
+cd builtins
+make libbuiltins.a
+cd ..
+make
+
+# Install
+install bash ${prefix}/bin/
+mkdir /bin/
+ln -s ${prefix}/bin/bash /bin/bash
+ln -s ${prefix}/bin/bash /bin/sh
+ln -s ${prefix}/bin/bash ${prefix}/bin/sh

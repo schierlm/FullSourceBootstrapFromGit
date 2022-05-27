@@ -1,0 +1,21 @@
+#!/bin/sh
+
+# SPDX-FileCopyrightText: 2022 Michael Schierl <schierlm@gmx.de>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+set -ex
+
+PATH=${PATH}:/opt/part01/mescc-tools/bin
+
+### tcc 0.9.26 (remaining builds) ###
+kaem --verbose --strict --file /sources/tcc.kaem
+
+### make-3.80 ###
+kaem --verbose --strict --file /sources/make.kaem
+
+### coreutils-5.0 ###
+kaem --verbose --strict --file /sources/coreutils.kaem
+
+### bash-2.05b ###
+kaem --verbose --strict --file /sources/bash.kaem
