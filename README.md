@@ -11,10 +11,11 @@ projects.
 This project builds on top of these projects, yet has slightly different objectives: It should be possible to run/test
 the various parts individually (both on own machine and in CI systems), and the used sources should be likely to being archived and easy to review.
 
-It tries to follow the Guix bootstrap process, with minor deviations where better tooling is helpful.
+It tries to follow the Guix bootstrap process, with minor deviations where better tooling is helpful
 ([Relevant](https://guix.gnu.org/manual/en/html_node/Reduced-Binary-Seed-Bootstrap.html)
 [dependency](https://www.gnu.org/software/mes/manual/html_node/The-Mes-Bootstrap-Process.html)
-[charts](https://bootstrappable.org/projects/mes.html)).
+[charts](https://bootstrappable.org/projects/mes.html)). Freshly created Guix dependency graphs are also provided
+[in this repo](graphs/).
 
 ### Overview
 
@@ -76,6 +77,7 @@ Artifacts are [available here](https://github.com/schierlm/FullSourceBootstrapFr
 
 Part02 continues building a more powerful tcc 0.96, make 3.80, coreutils 5.0 and (noninteractive) bash 2.05b.
 
-[This part is unfinished and may build more software in the future.]
+Then it uses bash to continue the bootstrap: sed 4.0.9, gzip 1.2.4, patch 2.5.9, bzip2 1.0.8, tcc 0.9.27,
+grep 2.4, gawk 3.0.0, and finally binutils 2.14.
 
 Artifacts are [available here](https://github.com/schierlm/FullSourceBootstrapFromGit/releases/tag/part02-artifacts).

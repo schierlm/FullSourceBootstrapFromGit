@@ -28,6 +28,9 @@ jobs:
     - name: Checkout this repository
       uses: actions/checkout@v2
 
+    - name: Install dependencies
+      run: sudo apt-get -y install dos2unix
+
     - name: Download previous part outputs
       if: inputs.depends_parts != ''
       run: ./download-previous-outputs.sh "${{ inputs.depends_parts }}"

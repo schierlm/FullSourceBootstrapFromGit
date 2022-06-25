@@ -1,0 +1,123 @@
+digraph "Guix bag" {
+  "/gnu/store/1pa96gwc1kcslw33p37s6idz5v19qnsg-gcc-mesboot-4.9.4.drv" [label = "gcc-mesboot@4.9.4", shape = box, fontname = sans];
+  "/gnu/store/1pa96gwc1kcslw33p37s6idz5v19qnsg-gcc-mesboot-4.9.4.drv" -> "/gnu/store/lgk0k0sl9vygp8vx5iraykf986pkcyih-gcc-mesboot1-wrapper-4.6.4.drv" [color = peachpuff4];
+  "/gnu/store/1pa96gwc1kcslw33p37s6idz5v19qnsg-gcc-mesboot-4.9.4.drv" -> "/gnu/store/wvnwilqxxa6rf4a32b6p52jngn6i4v5x-glibc-headers-mesboot-2.16.0.drv" [color = peachpuff4];
+  "/gnu/store/1pa96gwc1kcslw33p37s6idz5v19qnsg-gcc-mesboot-4.9.4.drv" -> "/gnu/store/06gk3wm09xb40n4k8whkjrgg25wzvnqy-glibc-mesboot-2.16.0.drv" [color = peachpuff4];
+  "/gnu/store/1pa96gwc1kcslw33p37s6idz5v19qnsg-gcc-mesboot-4.9.4.drv" -> "/gnu/store/nqc5d9y6jnm8ajkc34ykw7kvlknd26mp-binutils-mesboot-2.20.1a.drv" [color = peachpuff4];
+  "/gnu/store/1pa96gwc1kcslw33p37s6idz5v19qnsg-gcc-mesboot-4.9.4.drv" -> "/gnu/store/l3ayd071zpknzfmbn7dwbhx27pdm679q-xz-mesboot-5.0.0.drv" [color = peachpuff4];
+  "/gnu/store/1pa96gwc1kcslw33p37s6idz5v19qnsg-gcc-mesboot-4.9.4.drv" -> "/gnu/store/3k09q26qkv9441m5fvhzjz8m4lf7ndmg-gcc-mesboot1-4.6.4.drv" [color = peachpuff4];
+  "/gnu/store/1pa96gwc1kcslw33p37s6idz5v19qnsg-gcc-mesboot-4.9.4.drv" -> "/gnu/store/ic7ricfbl0nhvih048zd87l0xjspgalw-bash-mesboot-4.4.drv" [color = peachpuff4];
+  "/gnu/store/1pa96gwc1kcslw33p37s6idz5v19qnsg-gcc-mesboot-4.9.4.drv" -> "/gnu/store/zi2ih1wds72fhcgnqn26b6n9vdy9g592-coreutils-mesboot0-5.0.drv" [color = peachpuff4];
+  "/gnu/store/1pa96gwc1kcslw33p37s6idz5v19qnsg-gcc-mesboot-4.9.4.drv" -> "/gnu/store/86fnbqjjjrq5ayqsk3yh59mjkg3ghrij-gawk-mesboot-3.1.8.drv" [color = peachpuff4];
+  "/gnu/store/1pa96gwc1kcslw33p37s6idz5v19qnsg-gcc-mesboot-4.9.4.drv" -> "/gnu/store/xa6ymi4dgjbng79lchf1qf12w28yk9kg-grep-mesboot-2.0.drv" [color = peachpuff4];
+  "/gnu/store/1pa96gwc1kcslw33p37s6idz5v19qnsg-gcc-mesboot-4.9.4.drv" -> "/gnu/store/mh35jj5v2z45pry6zdn5x7nsvdf9iqm8-make-mesboot-3.82.drv" [color = peachpuff4];
+  "/gnu/store/1pa96gwc1kcslw33p37s6idz5v19qnsg-gcc-mesboot-4.9.4.drv" -> "/gnu/store/na9nz6kj47pfj7aypcwfcnr0mc9s4zf9-sed-mesboot-4.0.6.drv" [color = peachpuff4];
+  "/gnu/store/1pa96gwc1kcslw33p37s6idz5v19qnsg-gcc-mesboot-4.9.4.drv" -> "/gnu/store/xw2p01xsmychwr5pm4shmqckacr5qpbk-tar-mesboot-1.22.drv" [color = peachpuff4];
+  "/gnu/store/1pa96gwc1kcslw33p37s6idz5v19qnsg-gcc-mesboot-4.9.4.drv" -> "/gnu/store/m1xqdcrf91ja5rn553c5hsn7rj2syylh-linux-libre-headers-bootstrap-0.drv" [color = peachpuff4];
+  "/gnu/store/1pa96gwc1kcslw33p37s6idz5v19qnsg-gcc-mesboot-4.9.4.drv" -> "/gnu/store/m8mjyzp5682ywn3y3d5apchg5vrfa23l-bzip2-mesboot-1.0.8.drv" [color = peachpuff4];
+  "/gnu/store/1pa96gwc1kcslw33p37s6idz5v19qnsg-gcc-mesboot-4.9.4.drv" -> "/gnu/store/w810h2k7i788cd09g5vmzgg55kcqih1k-gzip-mesboot-1.2.4.drv" [color = peachpuff4];
+  "/gnu/store/1pa96gwc1kcslw33p37s6idz5v19qnsg-gcc-mesboot-4.9.4.drv" -> "/gnu/store/30aqah1ks5fakb4p165qdcqbmihmlbli-patch-mesboot-2.5.9.drv" [color = peachpuff4];
+  "/gnu/store/1pa96gwc1kcslw33p37s6idz5v19qnsg-gcc-mesboot-4.9.4.drv" -> "/gnu/store/im6ipgs4w2bgy4mhv7j59721dm39c881-gash-utils-boot-0.1.0.drv" [color = peachpuff4];
+  "/gnu/store/lgk0k0sl9vygp8vx5iraykf986pkcyih-gcc-mesboot1-wrapper-4.6.4.drv" [label = "gcc-mesboot1-wrapper@4.6.4", shape = box, fontname = sans];
+  "/gnu/store/lgk0k0sl9vygp8vx5iraykf986pkcyih-gcc-mesboot1-wrapper-4.6.4.drv" -> "/gnu/store/ic7ricfbl0nhvih048zd87l0xjspgalw-bash-mesboot-4.4.drv" [color = darkseagreen];
+  "/gnu/store/lgk0k0sl9vygp8vx5iraykf986pkcyih-gcc-mesboot1-wrapper-4.6.4.drv" -> "/gnu/store/zi2ih1wds72fhcgnqn26b6n9vdy9g592-coreutils-mesboot0-5.0.drv" [color = darkseagreen];
+  "/gnu/store/lgk0k0sl9vygp8vx5iraykf986pkcyih-gcc-mesboot1-wrapper-4.6.4.drv" -> "/gnu/store/06gk3wm09xb40n4k8whkjrgg25wzvnqy-glibc-mesboot-2.16.0.drv" [color = darkseagreen];
+  "/gnu/store/lgk0k0sl9vygp8vx5iraykf986pkcyih-gcc-mesboot1-wrapper-4.6.4.drv" -> "/gnu/store/3k09q26qkv9441m5fvhzjz8m4lf7ndmg-gcc-mesboot1-4.6.4.drv" [color = darkseagreen];
+  "/gnu/store/06gk3wm09xb40n4k8whkjrgg25wzvnqy-glibc-mesboot-2.16.0.drv" [label = "glibc-mesboot@2.16.0", shape = box, fontname = sans];
+  "/gnu/store/06gk3wm09xb40n4k8whkjrgg25wzvnqy-glibc-mesboot-2.16.0.drv" -> "/gnu/store/wvnwilqxxa6rf4a32b6p52jngn6i4v5x-glibc-headers-mesboot-2.16.0.drv" [color = cyan3];
+  "/gnu/store/06gk3wm09xb40n4k8whkjrgg25wzvnqy-glibc-mesboot-2.16.0.drv" -> "/gnu/store/nqc5d9y6jnm8ajkc34ykw7kvlknd26mp-binutils-mesboot-2.20.1a.drv" [color = cyan3];
+  "/gnu/store/06gk3wm09xb40n4k8whkjrgg25wzvnqy-glibc-mesboot-2.16.0.drv" -> "/gnu/store/l3ayd071zpknzfmbn7dwbhx27pdm679q-xz-mesboot-5.0.0.drv" [color = cyan3];
+  "/gnu/store/06gk3wm09xb40n4k8whkjrgg25wzvnqy-glibc-mesboot-2.16.0.drv" -> "/gnu/store/3k09q26qkv9441m5fvhzjz8m4lf7ndmg-gcc-mesboot1-4.6.4.drv" [color = cyan3];
+  "/gnu/store/06gk3wm09xb40n4k8whkjrgg25wzvnqy-glibc-mesboot-2.16.0.drv" -> "/gnu/store/ic7ricfbl0nhvih048zd87l0xjspgalw-bash-mesboot-4.4.drv" [color = cyan3];
+  "/gnu/store/06gk3wm09xb40n4k8whkjrgg25wzvnqy-glibc-mesboot-2.16.0.drv" -> "/gnu/store/zi2ih1wds72fhcgnqn26b6n9vdy9g592-coreutils-mesboot0-5.0.drv" [color = cyan3];
+  "/gnu/store/06gk3wm09xb40n4k8whkjrgg25wzvnqy-glibc-mesboot-2.16.0.drv" -> "/gnu/store/86fnbqjjjrq5ayqsk3yh59mjkg3ghrij-gawk-mesboot-3.1.8.drv" [color = cyan3];
+  "/gnu/store/06gk3wm09xb40n4k8whkjrgg25wzvnqy-glibc-mesboot-2.16.0.drv" -> "/gnu/store/xa6ymi4dgjbng79lchf1qf12w28yk9kg-grep-mesboot-2.0.drv" [color = cyan3];
+  "/gnu/store/06gk3wm09xb40n4k8whkjrgg25wzvnqy-glibc-mesboot-2.16.0.drv" -> "/gnu/store/mh35jj5v2z45pry6zdn5x7nsvdf9iqm8-make-mesboot-3.82.drv" [color = cyan3];
+  "/gnu/store/06gk3wm09xb40n4k8whkjrgg25wzvnqy-glibc-mesboot-2.16.0.drv" -> "/gnu/store/na9nz6kj47pfj7aypcwfcnr0mc9s4zf9-sed-mesboot-4.0.6.drv" [color = cyan3];
+  "/gnu/store/06gk3wm09xb40n4k8whkjrgg25wzvnqy-glibc-mesboot-2.16.0.drv" -> "/gnu/store/xw2p01xsmychwr5pm4shmqckacr5qpbk-tar-mesboot-1.22.drv" [color = cyan3];
+  "/gnu/store/06gk3wm09xb40n4k8whkjrgg25wzvnqy-glibc-mesboot-2.16.0.drv" -> "/gnu/store/m1xqdcrf91ja5rn553c5hsn7rj2syylh-linux-libre-headers-bootstrap-0.drv" [color = cyan3];
+  "/gnu/store/06gk3wm09xb40n4k8whkjrgg25wzvnqy-glibc-mesboot-2.16.0.drv" -> "/gnu/store/qcxkh76p6arpz2fn3gz27c8zh18j2xhj-glibc-mesboot0-2.2.5.drv" [color = cyan3];
+  "/gnu/store/06gk3wm09xb40n4k8whkjrgg25wzvnqy-glibc-mesboot-2.16.0.drv" -> "/gnu/store/m8mjyzp5682ywn3y3d5apchg5vrfa23l-bzip2-mesboot-1.0.8.drv" [color = cyan3];
+  "/gnu/store/06gk3wm09xb40n4k8whkjrgg25wzvnqy-glibc-mesboot-2.16.0.drv" -> "/gnu/store/w810h2k7i788cd09g5vmzgg55kcqih1k-gzip-mesboot-1.2.4.drv" [color = cyan3];
+  "/gnu/store/06gk3wm09xb40n4k8whkjrgg25wzvnqy-glibc-mesboot-2.16.0.drv" -> "/gnu/store/30aqah1ks5fakb4p165qdcqbmihmlbli-patch-mesboot-2.5.9.drv" [color = cyan3];
+  "/gnu/store/06gk3wm09xb40n4k8whkjrgg25wzvnqy-glibc-mesboot-2.16.0.drv" -> "/gnu/store/im6ipgs4w2bgy4mhv7j59721dm39c881-gash-utils-boot-0.1.0.drv" [color = cyan3];
+  "/gnu/store/wvnwilqxxa6rf4a32b6p52jngn6i4v5x-glibc-headers-mesboot-2.16.0.drv" [label = "glibc-headers-mesboot@2.16.0", shape = box, fontname = sans];
+  "/gnu/store/wvnwilqxxa6rf4a32b6p52jngn6i4v5x-glibc-headers-mesboot-2.16.0.drv" -> "/gnu/store/v8l1anpr7x6qrl77v1k0rcp87md3hi78-mesboot-headers-0.22.drv" [color = cyan3];
+  "/gnu/store/wvnwilqxxa6rf4a32b6p52jngn6i4v5x-glibc-headers-mesboot-2.16.0.drv" -> "/gnu/store/nqc5d9y6jnm8ajkc34ykw7kvlknd26mp-binutils-mesboot-2.20.1a.drv" [color = cyan3];
+  "/gnu/store/wvnwilqxxa6rf4a32b6p52jngn6i4v5x-glibc-headers-mesboot-2.16.0.drv" -> "/gnu/store/l3ayd071zpknzfmbn7dwbhx27pdm679q-xz-mesboot-5.0.0.drv" [color = cyan3];
+  "/gnu/store/wvnwilqxxa6rf4a32b6p52jngn6i4v5x-glibc-headers-mesboot-2.16.0.drv" -> "/gnu/store/3k09q26qkv9441m5fvhzjz8m4lf7ndmg-gcc-mesboot1-4.6.4.drv" [color = cyan3];
+  "/gnu/store/wvnwilqxxa6rf4a32b6p52jngn6i4v5x-glibc-headers-mesboot-2.16.0.drv" -> "/gnu/store/ic7ricfbl0nhvih048zd87l0xjspgalw-bash-mesboot-4.4.drv" [color = cyan3];
+  "/gnu/store/wvnwilqxxa6rf4a32b6p52jngn6i4v5x-glibc-headers-mesboot-2.16.0.drv" -> "/gnu/store/zi2ih1wds72fhcgnqn26b6n9vdy9g592-coreutils-mesboot0-5.0.drv" [color = cyan3];
+  "/gnu/store/wvnwilqxxa6rf4a32b6p52jngn6i4v5x-glibc-headers-mesboot-2.16.0.drv" -> "/gnu/store/86fnbqjjjrq5ayqsk3yh59mjkg3ghrij-gawk-mesboot-3.1.8.drv" [color = cyan3];
+  "/gnu/store/wvnwilqxxa6rf4a32b6p52jngn6i4v5x-glibc-headers-mesboot-2.16.0.drv" -> "/gnu/store/xa6ymi4dgjbng79lchf1qf12w28yk9kg-grep-mesboot-2.0.drv" [color = cyan3];
+  "/gnu/store/wvnwilqxxa6rf4a32b6p52jngn6i4v5x-glibc-headers-mesboot-2.16.0.drv" -> "/gnu/store/mh35jj5v2z45pry6zdn5x7nsvdf9iqm8-make-mesboot-3.82.drv" [color = cyan3];
+  "/gnu/store/wvnwilqxxa6rf4a32b6p52jngn6i4v5x-glibc-headers-mesboot-2.16.0.drv" -> "/gnu/store/na9nz6kj47pfj7aypcwfcnr0mc9s4zf9-sed-mesboot-4.0.6.drv" [color = cyan3];
+  "/gnu/store/wvnwilqxxa6rf4a32b6p52jngn6i4v5x-glibc-headers-mesboot-2.16.0.drv" -> "/gnu/store/xw2p01xsmychwr5pm4shmqckacr5qpbk-tar-mesboot-1.22.drv" [color = cyan3];
+  "/gnu/store/wvnwilqxxa6rf4a32b6p52jngn6i4v5x-glibc-headers-mesboot-2.16.0.drv" -> "/gnu/store/m1xqdcrf91ja5rn553c5hsn7rj2syylh-linux-libre-headers-bootstrap-0.drv" [color = cyan3];
+  "/gnu/store/wvnwilqxxa6rf4a32b6p52jngn6i4v5x-glibc-headers-mesboot-2.16.0.drv" -> "/gnu/store/qcxkh76p6arpz2fn3gz27c8zh18j2xhj-glibc-mesboot0-2.2.5.drv" [color = cyan3];
+  "/gnu/store/wvnwilqxxa6rf4a32b6p52jngn6i4v5x-glibc-headers-mesboot-2.16.0.drv" -> "/gnu/store/m8mjyzp5682ywn3y3d5apchg5vrfa23l-bzip2-mesboot-1.0.8.drv" [color = cyan3];
+  "/gnu/store/wvnwilqxxa6rf4a32b6p52jngn6i4v5x-glibc-headers-mesboot-2.16.0.drv" -> "/gnu/store/w810h2k7i788cd09g5vmzgg55kcqih1k-gzip-mesboot-1.2.4.drv" [color = cyan3];
+  "/gnu/store/wvnwilqxxa6rf4a32b6p52jngn6i4v5x-glibc-headers-mesboot-2.16.0.drv" -> "/gnu/store/30aqah1ks5fakb4p165qdcqbmihmlbli-patch-mesboot-2.5.9.drv" [color = cyan3];
+  "/gnu/store/wvnwilqxxa6rf4a32b6p52jngn6i4v5x-glibc-headers-mesboot-2.16.0.drv" -> "/gnu/store/im6ipgs4w2bgy4mhv7j59721dm39c881-gash-utils-boot-0.1.0.drv" [color = cyan3];
+  "/gnu/store/nqc5d9y6jnm8ajkc34ykw7kvlknd26mp-binutils-mesboot-2.20.1a.drv" [label = "binutils-mesboot@2.20.1a", shape = box, fontname = sans];
+  "/gnu/store/nqc5d9y6jnm8ajkc34ykw7kvlknd26mp-binutils-mesboot-2.20.1a.drv" -> "/gnu/store/l3ayd071zpknzfmbn7dwbhx27pdm679q-xz-mesboot-5.0.0.drv" [color = cyan3];
+  "/gnu/store/nqc5d9y6jnm8ajkc34ykw7kvlknd26mp-binutils-mesboot-2.20.1a.drv" -> "/gnu/store/3k09q26qkv9441m5fvhzjz8m4lf7ndmg-gcc-mesboot1-4.6.4.drv" [color = cyan3];
+  "/gnu/store/nqc5d9y6jnm8ajkc34ykw7kvlknd26mp-binutils-mesboot-2.20.1a.drv" -> "/gnu/store/ic7ricfbl0nhvih048zd87l0xjspgalw-bash-mesboot-4.4.drv" [color = cyan3];
+  "/gnu/store/nqc5d9y6jnm8ajkc34ykw7kvlknd26mp-binutils-mesboot-2.20.1a.drv" -> "/gnu/store/23ibqg1qncqcsz3jmbzls88f9paraz66-binutils-mesboot1-2.14.drv" [color = cyan3];
+  "/gnu/store/nqc5d9y6jnm8ajkc34ykw7kvlknd26mp-binutils-mesboot-2.20.1a.drv" -> "/gnu/store/zi2ih1wds72fhcgnqn26b6n9vdy9g592-coreutils-mesboot0-5.0.drv" [color = cyan3];
+  "/gnu/store/nqc5d9y6jnm8ajkc34ykw7kvlknd26mp-binutils-mesboot-2.20.1a.drv" -> "/gnu/store/86fnbqjjjrq5ayqsk3yh59mjkg3ghrij-gawk-mesboot-3.1.8.drv" [color = cyan3];
+  "/gnu/store/nqc5d9y6jnm8ajkc34ykw7kvlknd26mp-binutils-mesboot-2.20.1a.drv" -> "/gnu/store/xa6ymi4dgjbng79lchf1qf12w28yk9kg-grep-mesboot-2.0.drv" [color = cyan3];
+  "/gnu/store/nqc5d9y6jnm8ajkc34ykw7kvlknd26mp-binutils-mesboot-2.20.1a.drv" -> "/gnu/store/mh35jj5v2z45pry6zdn5x7nsvdf9iqm8-make-mesboot-3.82.drv" [color = cyan3];
+  "/gnu/store/nqc5d9y6jnm8ajkc34ykw7kvlknd26mp-binutils-mesboot-2.20.1a.drv" -> "/gnu/store/na9nz6kj47pfj7aypcwfcnr0mc9s4zf9-sed-mesboot-4.0.6.drv" [color = cyan3];
+  "/gnu/store/nqc5d9y6jnm8ajkc34ykw7kvlknd26mp-binutils-mesboot-2.20.1a.drv" -> "/gnu/store/xw2p01xsmychwr5pm4shmqckacr5qpbk-tar-mesboot-1.22.drv" [color = cyan3];
+  "/gnu/store/nqc5d9y6jnm8ajkc34ykw7kvlknd26mp-binutils-mesboot-2.20.1a.drv" -> "/gnu/store/m1xqdcrf91ja5rn553c5hsn7rj2syylh-linux-libre-headers-bootstrap-0.drv" [color = cyan3];
+  "/gnu/store/nqc5d9y6jnm8ajkc34ykw7kvlknd26mp-binutils-mesboot-2.20.1a.drv" -> "/gnu/store/qcxkh76p6arpz2fn3gz27c8zh18j2xhj-glibc-mesboot0-2.2.5.drv" [color = cyan3];
+  "/gnu/store/nqc5d9y6jnm8ajkc34ykw7kvlknd26mp-binutils-mesboot-2.20.1a.drv" -> "/gnu/store/m8mjyzp5682ywn3y3d5apchg5vrfa23l-bzip2-mesboot-1.0.8.drv" [color = cyan3];
+  "/gnu/store/nqc5d9y6jnm8ajkc34ykw7kvlknd26mp-binutils-mesboot-2.20.1a.drv" -> "/gnu/store/w810h2k7i788cd09g5vmzgg55kcqih1k-gzip-mesboot-1.2.4.drv" [color = cyan3];
+  "/gnu/store/nqc5d9y6jnm8ajkc34ykw7kvlknd26mp-binutils-mesboot-2.20.1a.drv" -> "/gnu/store/30aqah1ks5fakb4p165qdcqbmihmlbli-patch-mesboot-2.5.9.drv" [color = cyan3];
+  "/gnu/store/nqc5d9y6jnm8ajkc34ykw7kvlknd26mp-binutils-mesboot-2.20.1a.drv" -> "/gnu/store/im6ipgs4w2bgy4mhv7j59721dm39c881-gash-utils-boot-0.1.0.drv" [color = cyan3];
+  "/gnu/store/l3ayd071zpknzfmbn7dwbhx27pdm679q-xz-mesboot-5.0.0.drv" [label = "xz-mesboot@5.0.0", shape = box, fontname = sans];
+  "/gnu/store/l3ayd071zpknzfmbn7dwbhx27pdm679q-xz-mesboot-5.0.0.drv" -> "/gnu/store/3k09q26qkv9441m5fvhzjz8m4lf7ndmg-gcc-mesboot1-4.6.4.drv" [color = dimgrey];
+  "/gnu/store/l3ayd071zpknzfmbn7dwbhx27pdm679q-xz-mesboot-5.0.0.drv" -> "/gnu/store/ic7ricfbl0nhvih048zd87l0xjspgalw-bash-mesboot-4.4.drv" [color = dimgrey];
+  "/gnu/store/l3ayd071zpknzfmbn7dwbhx27pdm679q-xz-mesboot-5.0.0.drv" -> "/gnu/store/23ibqg1qncqcsz3jmbzls88f9paraz66-binutils-mesboot1-2.14.drv" [color = dimgrey];
+  "/gnu/store/l3ayd071zpknzfmbn7dwbhx27pdm679q-xz-mesboot-5.0.0.drv" -> "/gnu/store/zi2ih1wds72fhcgnqn26b6n9vdy9g592-coreutils-mesboot0-5.0.drv" [color = dimgrey];
+  "/gnu/store/l3ayd071zpknzfmbn7dwbhx27pdm679q-xz-mesboot-5.0.0.drv" -> "/gnu/store/86fnbqjjjrq5ayqsk3yh59mjkg3ghrij-gawk-mesboot-3.1.8.drv" [color = dimgrey];
+  "/gnu/store/l3ayd071zpknzfmbn7dwbhx27pdm679q-xz-mesboot-5.0.0.drv" -> "/gnu/store/xa6ymi4dgjbng79lchf1qf12w28yk9kg-grep-mesboot-2.0.drv" [color = dimgrey];
+  "/gnu/store/l3ayd071zpknzfmbn7dwbhx27pdm679q-xz-mesboot-5.0.0.drv" -> "/gnu/store/mh35jj5v2z45pry6zdn5x7nsvdf9iqm8-make-mesboot-3.82.drv" [color = dimgrey];
+  "/gnu/store/l3ayd071zpknzfmbn7dwbhx27pdm679q-xz-mesboot-5.0.0.drv" -> "/gnu/store/na9nz6kj47pfj7aypcwfcnr0mc9s4zf9-sed-mesboot-4.0.6.drv" [color = dimgrey];
+  "/gnu/store/l3ayd071zpknzfmbn7dwbhx27pdm679q-xz-mesboot-5.0.0.drv" -> "/gnu/store/xw2p01xsmychwr5pm4shmqckacr5qpbk-tar-mesboot-1.22.drv" [color = dimgrey];
+  "/gnu/store/l3ayd071zpknzfmbn7dwbhx27pdm679q-xz-mesboot-5.0.0.drv" -> "/gnu/store/m1xqdcrf91ja5rn553c5hsn7rj2syylh-linux-libre-headers-bootstrap-0.drv" [color = dimgrey];
+  "/gnu/store/l3ayd071zpknzfmbn7dwbhx27pdm679q-xz-mesboot-5.0.0.drv" -> "/gnu/store/qcxkh76p6arpz2fn3gz27c8zh18j2xhj-glibc-mesboot0-2.2.5.drv" [color = dimgrey];
+  "/gnu/store/l3ayd071zpknzfmbn7dwbhx27pdm679q-xz-mesboot-5.0.0.drv" -> "/gnu/store/m8mjyzp5682ywn3y3d5apchg5vrfa23l-bzip2-mesboot-1.0.8.drv" [color = dimgrey];
+  "/gnu/store/l3ayd071zpknzfmbn7dwbhx27pdm679q-xz-mesboot-5.0.0.drv" -> "/gnu/store/w810h2k7i788cd09g5vmzgg55kcqih1k-gzip-mesboot-1.2.4.drv" [color = dimgrey];
+  "/gnu/store/l3ayd071zpknzfmbn7dwbhx27pdm679q-xz-mesboot-5.0.0.drv" -> "/gnu/store/30aqah1ks5fakb4p165qdcqbmihmlbli-patch-mesboot-2.5.9.drv" [color = dimgrey];
+  "/gnu/store/l3ayd071zpknzfmbn7dwbhx27pdm679q-xz-mesboot-5.0.0.drv" -> "/gnu/store/im6ipgs4w2bgy4mhv7j59721dm39c881-gash-utils-boot-0.1.0.drv" [color = dimgrey];
+
+ newrank=true ranksep=1
+ subgraph "cluster-gcc-mesboot1" {
+ label="gcc-mesboot1" style=dashed rank=same
+
+  "/gnu/store/3k09q26qkv9441m5fvhzjz8m4lf7ndmg-gcc-mesboot1-4.6.4.drv" [label = "gcc-mesboot1@4.6.4", shape = box, fontname = sans];
+  "/gnu/store/ic7ricfbl0nhvih048zd87l0xjspgalw-bash-mesboot-4.4.drv" [label = "bash-mesboot@4.4", shape = box, fontname = sans];
+  "/gnu/store/23ibqg1qncqcsz3jmbzls88f9paraz66-binutils-mesboot1-2.14.drv" [label = "binutils-mesboot1@2.14", shape = box, fontname = sans];
+  "/gnu/store/zi2ih1wds72fhcgnqn26b6n9vdy9g592-coreutils-mesboot0-5.0.drv" [label = "coreutils-mesboot0@5.0", shape = box, fontname = sans];
+  "/gnu/store/86fnbqjjjrq5ayqsk3yh59mjkg3ghrij-gawk-mesboot-3.1.8.drv" [label = "gawk-mesboot@3.1.8", shape = box, fontname = sans];
+  "/gnu/store/xa6ymi4dgjbng79lchf1qf12w28yk9kg-grep-mesboot-2.0.drv" [label = "grep-mesboot@2.0", shape = box, fontname = sans];
+  "/gnu/store/mh35jj5v2z45pry6zdn5x7nsvdf9iqm8-make-mesboot-3.82.drv" [label = "make-mesboot@3.82", shape = box, fontname = sans];
+  "/gnu/store/na9nz6kj47pfj7aypcwfcnr0mc9s4zf9-sed-mesboot-4.0.6.drv" [label = "sed-mesboot@4.0.6", shape = box, fontname = sans];
+  "/gnu/store/xw2p01xsmychwr5pm4shmqckacr5qpbk-tar-mesboot-1.22.drv" [label = "tar-mesboot@1.22", shape = box, fontname = sans];
+
+ } 
+ subgraph "cluster-gcc-mesboot0" {
+ label="gcc-mesboot0" style=dashed rank=same
+ 
+  "/gnu/store/qcxkh76p6arpz2fn3gz27c8zh18j2xhj-glibc-mesboot0-2.2.5.drv" [label = "glibc-mesboot0@2.2.5", shape = box, fontname = sans];
+  "/gnu/store/v8l1anpr7x6qrl77v1k0rcp87md3hi78-mesboot-headers-0.22.drv" [label = "mesboot-headers@0.22", shape = box, fontname = sans];
+  "/gnu/store/m1xqdcrf91ja5rn553c5hsn7rj2syylh-linux-libre-headers-bootstrap-0.drv" [label = "linux-libre-headers-bootstrap@0", shape = box, fontname = sans];
+  "/gnu/store/im6ipgs4w2bgy4mhv7j59721dm39c881-gash-utils-boot-0.1.0.drv" [label = "gash-utils-boot@0.1.0", shape = box, fontname = sans];
+  "/gnu/store/m8mjyzp5682ywn3y3d5apchg5vrfa23l-bzip2-mesboot-1.0.8.drv" [label = "bzip2-mesboot@1.0.8", shape = box, fontname = sans];
+  "/gnu/store/w810h2k7i788cd09g5vmzgg55kcqih1k-gzip-mesboot-1.2.4.drv" [label = "gzip-mesboot@1.2.4", shape = box, fontname = sans];
+  "/gnu/store/30aqah1ks5fakb4p165qdcqbmihmlbli-patch-mesboot-2.5.9.drv" [label = "patch-mesboot@2.5.9", shape = box, fontname = sans];
+ }
+
+}

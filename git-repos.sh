@@ -15,8 +15,17 @@ repo part01 nyacc-1.00.2 https://git.savannah.nongnu.org/git/nyacc.git V1.00.2 0
 repo part01 tcc-0.9.26-janneke https://gitlab.com/janneke/tinycc.git mes-0.23 5bba73ccca0e794a6557de166b91923228cb6f73
 
 repo part02 /sources/live-bootstrap https://github.com/fosslinux/live-bootstrap b2814c9a9720824dd31d61d3295598da6305ecc4 b2814c9a9720824dd31d61d3295598da6305ecc4
+repo part02 /sources/bootstrap-tarballs https://github.com/schierlm/BuildBootstrapTarballsFromGit 0ecb13c7c2c349a08ad52b5b8e90cd5b04841366 0ecb13c7c2c349a08ad52b5b8e90cd5b04841366
 repo part02 /sources/mes-0.24 https://git.savannah.nongnu.org/git/mes.git v0.24 a36eb013f8f2dc78e14c7ad1d6f5faa360294780
 repo part02 /sources/tcc-0.9.26-janneke https://gitlab.com/janneke/tinycc.git mes-0.23 5bba73ccca0e794a6557de166b91923228cb6f73
 repo part02 /sources/make-3.80 https://git.savannah.nongnu.org/git/make.git 3.80 d1d9c0274bf49bac2cf5293caef54f474cced796
 repo part02 /sources/coreutils-5.0 https://git.savannah.nongnu.org/git/coreutils.git v5.0 65d52b65f68b873e8c79ab99e843f13aee466ac3
 repo part02 /sources/bash-2.05b https://git.savannah.nongnu.org/git/bash.git devel-base-dist 7117c2d221b2aed4ede8600f6a36b7c1454b4f55
+repo part02 /sources/gzip-1.2.4 https://github.com/Distrotech/gzip f8df0e2e19e693772e8b826567092911373624a2 f8df0e2e19e693772e8b826567092911373624a2
+repo part02 /sources/sed-4.0.9 https://github.com/mirror/sed 5b8a41362041bb4c950488745694f1242f611e66 5b8a41362041bb4c950488745694f1242f611e66
+repo part02 /sources/patch-2.5.9 https://git.savannah.gnu.org/git/patch.git v2.5.9 e930d168adfce7a64caf4852892f43deacd94fc5
+repo part02 /sources/bzip2-1.0.8 https://sourceware.org/git/bzip2.git bzip2-1.0.8 6a8690fc8d26c815e798c588f796eabe9d684cf0
+repo part02 /sources/tcc-0.9.27 https://git.savannah.gnu.org/git/tinycc.git release_0_9_27 d348a9a51d32cece842b7885d27a411436d7887b
+repo part02 /sources/grep-2.4 https://github.com/zevweiss/grep/ e518282eb052be581d6e5a1708ea89bb10c9002d e518282eb052be581d6e5a1708ea89bb10c9002d
+repo part02 /sources/gawk-3.0.0 https://git.savannah.gnu.org/git/gawk.git gawk-3.0.0 8c042f99cc7465c86351d21331a129111b75345d
+repo part02 /sources/binutils-2.14 https://sourceware.org/git/binutils-gdb.git binutils-2_14 a6c882349c20eb4702f2d4c7730b8594a10b9100

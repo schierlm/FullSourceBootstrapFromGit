@@ -1,0 +1,22 @@
+--- 1/Makefile.in
++++ 2/Makefile.in
+@@ -117,8 +117,8 @@
+ # autoheader might not change confh.in, so touch a stamp file
+ $(srcdir)/configh.in:	stamp-h.in
+ $(srcdir)/stamp-h.in:	configure.in aclocal.m4 acconfig.h
+-	cd $(srcdir) && autoheader
+-	date > $(srcdir)/stamp-h.in
++	cd $(srcdir)
++	echo today > $(srcdir)/stamp-h.in
+ 
+ config.h:	stamp-h
+ stamp-h:	configh.in config.status
+@@ -131,7 +131,7 @@
+ 	$(SHELL) ./config.status --recheck
+ 
+ gawk:	$(ALLOBJS) $(GNUOBJS) $(REOBJS)
+-	$(CC) -o gawk $(LDFLAGS) $(ALLOBJS) $(GNUOBJS) $(REOBJS) -lm $(LIBS)
++	$(CC) -o gawk $(LDFLAGS) $(ALLOBJS) $(GNUOBJS) $(REOBJS) $(LIBS)
+ 
+ $(ALLOBJS):	awk.h dfa.h regex.h config.h custom.h
+ 

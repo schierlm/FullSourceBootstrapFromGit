@@ -19,3 +19,5 @@ kaem --verbose --strict --file /sources/coreutils.kaem
 
 ### bash-2.05b ###
 kaem --verbose --strict --file /sources/bash.kaem
+
+/opt/part02/bash/bin/bash /sources/bootstrap.sh

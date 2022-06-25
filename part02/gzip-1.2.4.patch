@@ -1,0 +1,11 @@
+--- 1/util.c
++++ 2/util.c
+@@ -165,7 +165,7 @@
+ /* ========================================================================
+  * Put string s in lower case, return s.
+  */
+-char *strlwr(s)
++char *my_strlwr(s)
+     char *s;
+ {
+     char *t;
