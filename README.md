@@ -42,8 +42,6 @@ into the output tarball (including the whole path).
   should be made how easy it is to regenerate it at this stage of the bootstrap, and how hard it is to manually review the generated code vs. review the
   additional code that needs to get introduced into the bootstrap. [While developing, when in doubt, leave the pregenerated file]. In case the pregenerated
   files are missing from the source repositories, they have to be added to this repository instead.
-- Bashisms are explicitly allowed. We are bootstrapping a GNU/Linux system (which includes bash quite early), and some bashisms (like brace expansions or
-  associative arrays) are really useful for creating readable and concise scripts.
 - We do not care whethe software is reproducible at this stage. If bootstrapping software is not reproducible, that should not matter,
   as it should eventually be used to build reproducible software anyway - and that software can then be checked against other builds
   (e.g. Debian's or Guix's). Of course, if the software is already reproducible, we can do hash checks or similar to enforce/verify it.

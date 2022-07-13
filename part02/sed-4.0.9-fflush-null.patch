@@ -1,0 +1,11 @@
+--- 1/lib/utils.c
++++ 2/lib/utils.c
+@@ -183,7 +183,7 @@
+   FILE *stream;
+ {
+   clearerr(stream);
+-  if (fflush(stream) == EOF && errno != EBADF)
++  if (fflush(stream) == EOF && errno != EBADF && strncmp(utils_fp_name(stream), "/dev/", 5) != 0)
+     panic("Couldn't flush %s: %s", utils_fp_name(stream), strerror(errno));
+ }
+ 

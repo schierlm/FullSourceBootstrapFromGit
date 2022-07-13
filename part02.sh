@@ -67,7 +67,8 @@ sed -i 's/\f//g' build/chroot/sources/binutils-2.14/gprof/bsd_callg_bl.c
 patch -d build/chroot/sources/gzip-1.2.4 -N -p1 -i ../../../../part02/gzip-1.2.4.patch
 patch -d build/chroot/sources/gawk-3.0.0 -N -p1 -i ../../../../part02/gawk-3.0.0.patch
 cp build/chroot/sources/live-bootstrap/sysa/coreutils-5.0/mk/main.mk build/chroot/sources/coreutils-5.0/Makefile
-patch -d build/chroot/sources/coreutils-5.0 -N -p1 -i ../../../../part02/coreutils-5.0-expr.patch
+patch -d build/chroot/sources/coreutils-5.0 -N -p1 -i ../../../../part02/coreutils-5.0-dirname-expr-sort.patch
+patch -d build/chroot/sources/sed-4.0.9 -N -p1 -i ../../../../part02/sed-4.0.9-fflush-null.patch
 
 for f in build/chroot/sources/gzip-1.2.4/gzip.info build/chroot/sources/sed-4.0.9/doc/*.info* build/chroot/sources/binutils-2.14/{etc,gprof,ld,bfd/doc,gas/doc,binutils/doc}/*.info*; do
 	rm -R $f

@@ -97,4 +97,3 @@ make configure-host
 sed -i 's/max_cmd_len=-/max_cmd_len=32768/g' */libtool
 make
 make install INSTALL="/opt/part02/coreutils/bin/install -c"
-## TODO manually try testsuite(s)
