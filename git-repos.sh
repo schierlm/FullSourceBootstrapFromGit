@@ -29,3 +29,9 @@ repo part02 /sources/tcc-0.9.27 https://git.savannah.gnu.org/git/tinycc.git rele
 repo part02 /sources/grep-2.4 https://github.com/zevweiss/grep/ e518282eb052be581d6e5a1708ea89bb10c9002d e518282eb052be581d6e5a1708ea89bb10c9002d
 repo part02 /sources/gawk-3.0.0 https://git.savannah.gnu.org/git/gawk.git gawk-3.0.0 8c042f99cc7465c86351d21331a129111b75345d
 repo part02 /sources/binutils-2.14 https://sourceware.org/git/binutils-gdb.git binutils-2_14 a6c882349c20eb4702f2d4c7730b8594a10b9100
+
+repo part03 /sources/bootstrap-tarballs https://github.com/schierlm/BuildBootstrapTarballsFromGit 0ecb13c7c2c349a08ad52b5b8e90cd5b04841366 0ecb13c7c2c349a08ad52b5b8e90cd5b04841366
+repo part03 /sources/guix-1.3.0 https://git.savannah.gnu.org/git/guix.git v1.3.0 a0178d34f582b50e9bdbb0403943129ae5b560ff
+repo part03 /sources/linux-4.0 https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git v4.0 39a8804455fb23f09157341d3ba7db6d7ae6ee76
+repo part03 /sources/gcc-2.95.3 https://gcc.gnu.org/git/gcc.git releases/gcc-2.95.3 7f236610e99c7a11fb18f056b6446b3c7c40979c
+repo part03 /sources/glibc-2.2.5 https://sourceware.org/git/glibc.git glibc-2.2.5 7d04edce9211ccd0ae06cd19d3cc2098d8891935

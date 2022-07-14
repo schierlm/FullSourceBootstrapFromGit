@@ -79,3 +79,10 @@ Then it uses bash to continue the bootstrap: sed 4.0.9, gzip 1.2.4, patch 2.5.9,
 grep 2.4, gawk 3.0.0, and finally binutils 2.14.
 
 Artifacts are [available here](https://github.com/schierlm/FullSourceBootstrapFromGit/releases/tag/part02-artifacts).
+
+### Part 03
+
+Part03 starts by building/cleaning the Linux 4.0 API headers. After that, gcc 2.95.3 is built using tcc,
+followed by builing glibc 2.2.5 and again gcc using the freshly built gcc.
+
+Artifacts are [available here](https://github.com/schierlm/FullSourceBootstrapFromGit/releases/tag/part03-artifacts).
