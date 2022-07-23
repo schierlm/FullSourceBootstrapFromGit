@@ -25,6 +25,13 @@ jobs:
       partname: part03
       release_id: 71947227
       depends_parts: part01 part02
+  part04:
+    if: startsWith(github.ref, 'refs/heads/part04')
+    uses: ./.github/workflows/common.yml
+    with:
+      partname: part04
+      release_id: 72679556
+      depends_parts: part02 part03
   swh:
     if: startsWith(github.ref, 'refs/heads/main')
     name: Check that all repositories are archived by softwareheritage.org

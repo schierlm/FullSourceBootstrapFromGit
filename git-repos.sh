@@ -35,3 +35,17 @@ repo part03 /sources/guix-1.3.0 https://git.savannah.gnu.org/git/guix.git v1.3.0
 repo part03 /sources/linux-4.0 https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git v4.0 39a8804455fb23f09157341d3ba7db6d7ae6ee76
 repo part03 /sources/gcc-2.95.3 https://gcc.gnu.org/git/gcc.git releases/gcc-2.95.3 7f236610e99c7a11fb18f056b6446b3c7c40979c
 repo part03 /sources/glibc-2.2.5 https://sourceware.org/git/glibc.git glibc-2.2.5 7d04edce9211ccd0ae06cd19d3cc2098d8891935
+
+repo part04 /sources/bootstrap-tarballs https://github.com/schierlm/BuildBootstrapTarballsFromGit 0ecb13c7c2c349a08ad52b5b8e90cd5b04841366 0ecb13c7c2c349a08ad52b5b8e90cd5b04841366
+repo part04 /sources/coreutils-5.0 https://git.savannah.nongnu.org/git/coreutils.git v5.0 65d52b65f68b873e8c79ab99e843f13aee466ac3
+repo part04 /sources/sed-4.0.9 https://github.com/mirror/sed 5b8a41362041bb4c950488745694f1242f611e66 5b8a41362041bb4c950488745694f1242f611e66
+repo part04 /sources/bash-4.4 https://git.savannah.gnu.org/git/bash.git bash-4.4 a0c0a00fc419b7bc08202a79134fcd5bc0427071
+repo part04 /sources/diffutils-2.7 https://git.savannah.gnu.org/git/diffutils.git v2.7 4e44a14836a44835c63c0534b5895ac47d632759
+repo part04 /sources/findutils-4.2.33 https://git.savannah.gnu.org/git/findutils.git/ FINDUTILS_4_2_33-1 24c3aca21d04d3c27b9ec203223dd9127e491c4c
+repo part04 /sources/m4-1.4.7 https://git.savannah.gnu.org/git/m4.git release-1.4.7 25fde5b6c53074e6f6e4da087bb187cc3e5db47c
+repo part04 /sources/autoconf-2.52 https://git.savannah.gnu.org/git/autoconf.git AUTOCONF-2.52 7131306a64b59b0244ef069db87da5274d6a31c7
+repo part04 /sources/tar-1.22 https://git.savannah.gnu.org/git/tar.git release_1_22 9077de9fa91886697a1294891a8d4e6d17fcd30b
+repo part04 /sources/gawk-3.1.8 https://git.savannah.gnu.org/git/gawk.git gawk-3.1.8 00ef0423acd97cb964a2bae54c93a03a8ab50e5e
+repo part04 /sources/make-3.82 https://git.savannah.gnu.org/git/make.git 3.82 95f1a32d27eef91a8a037522467d7060e7da2624
+repo part04 /sources/patch-2.5.9 https://git.savannah.gnu.org/git/patch.git v2.5.9 e930d168adfce7a64caf4852892f43deacd94fc5
+repo part04 /sources/grep-2.4 https://github.com/zevweiss/grep/ e518282eb052be581d6e5a1708ea89bb10c9002d e518282eb052be581d6e5a1708ea89bb10c9002d

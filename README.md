@@ -86,3 +86,24 @@ Part03 starts by building/cleaning the Linux 4.0 API headers. After that, gcc 2.
 followed by builing glibc 2.2.5 and again gcc using the freshly built gcc.
 
 Artifacts are [available here](https://github.com/schierlm/FullSourceBootstrapFromGit/releases/tag/part03-artifacts).
+
+### Part 04
+
+Part04 starts by rebuilding coreutils 5.0 with gcc/glibc, to get more complete/correct coreutils. As the previous
+coreutils did not include the `uniq` utility, but coreutils' Configure script requires it (to optimize duplicate
+defines), alias it to `cat` for the configure script. Afterwards, rebuild sed 4.0.9 as the previous sed had trouble with
+some I/O operations due to limited meslibc APIs.
+
+Continue with building a more recent bash 4.4 that also works interactively, and continue using this shell for the rest of the part.
+
+Now build diffutils 2.7 and findutils 4.2.33, as those are also referenced by some Configure scripts, which previously had to be patched out.
+
+Continue with m4 1.4.7 and autoconf 2.52, which may be useful for regenerating Configure scripts.
+
+Build tar 1.22, gawk 3.1.8 and make 3.82 as they will be required for gcc 4.6.4.
+
+Finally, rebuild patch 2.5.9 and grep 2.4 against gcc/glibc.
+
+The only tools that have not been rebuilt yet and therefore still use meslibc are gzip, bzip2 and binutils.
+
+Artifacts are [available here](https://github.com/schierlm/FullSourceBootstrapFromGit/releases/tag/part04-artifacts).
