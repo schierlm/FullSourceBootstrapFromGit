@@ -107,3 +107,9 @@ Finally, rebuild patch 2.5.9 and grep 2.4 against gcc/glibc.
 The only tools that have not been rebuilt yet and therefore still use meslibc are gzip, bzip2 and binutils.
 
 Artifacts are [available here](https://github.com/schierlm/FullSourceBootstrapFromGit/releases/tag/part04-artifacts).
+
+### Part 05
+
+Part05 builds gcc 4.6.4 along with its dependencies (gmp 4.3.2, gmp 4.3.2, mpc 1.0.3). gcc is just built once.
+
+Artifacts are [available here](https://github.com/schierlm/FullSourceBootstrapFromGit/releases/tag/part05-artifacts).
